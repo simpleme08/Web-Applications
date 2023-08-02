@@ -3,7 +3,7 @@
 
   try {
     Include_once 'php/connection.php';
-    $sql="Select {fn concat(elast,{fn concat(', ',{fn concat(efirst,{fn concat(' ',emiddle)})})})}  as [EmpName],empcode From Employees
+    $sql="Select TOP 10 {fn concat(elast,{fn concat(', ',{fn concat(efirst,{fn concat(' ',emiddle)})})})}  as [EmpName],empcode From Employees
           Where empstat <> 'RES' Order By elast";
     echo "<table id=emp'>";
     echo "<tr><th>Employee Name</th><th>Code</th></tr>";
