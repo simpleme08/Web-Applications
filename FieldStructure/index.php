@@ -12,11 +12,6 @@
 <body>
     <?php include "php/data.php" ?>
     <script src="js/script.js"></script>
-
-    <form>
-        <input type="text" placeholder="Full Name" name="name">
-        <button>Submit!</button>
-    </form>
 </body>
 
 </html>
