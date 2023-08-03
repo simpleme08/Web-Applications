@@ -12,6 +12,12 @@
 <body>
     <?php include "php/data.php" ?>
     <script src="js/script.js"></script>
+    <table>
+        <th>Mobile/Email</th>
+        <th>Account No</th>
+        <th>Status</th>
+    </table>
+
 </body>
 
 </html>
