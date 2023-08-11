@@ -10,15 +10,29 @@
 </head>
 
 <body>
+    
     <?php include "php/data.php" ?>
-    <script src="js/script.js"></script>
+    
+    <script> var table = document.getElementById('emp');
+
+for(var i = 1; i < table.rows.length; i++)
+{
+    table.rows[i].onclick = function()
+    {
+        //rIndex = this.rowIndex;
+        document.getElementById(name).value = this.cells[0].innerHTML;
+        document.getElementById(empcode).value = this.cells[1].innerHTML;
+
+    };
+}
+</script>
     <table id="dev">
         <tr>
             <th>Mobile/Email</th>
             <th>Account No</th>
             <th>Status</th>
         </tr>
-        <tr>
+        <tr onclick="getData(this)">
             <td>6300000000000</td>
             <td>123</td> 
             <td>1</td>
@@ -29,14 +43,14 @@
             <th>Old Code</th>
             <th>Area Description</th>
         </tr>
-        <tr>
+        <tr onclick="getData(this)">
             <td>OFFC10</td>
             <td>LOREMIPSUM</td> 
         </tr>
     </table>
     Covered Areas:
     <table id="assignment">
-        <tr>
+        <tr onclick="getData(this)">
             <th>Division</th>
             <th>Area Type</th>
             <th>Area Code</th>
@@ -44,7 +58,7 @@
             <th>Start Date</th>
             <th>End Date</th>
         </tr>
-        <tr>
+        <tr onclick="getData(this)">
             <td>OFFICE</td>
             <td>Terr</td> 
             <td>OFFC10</td>
@@ -52,8 +66,10 @@
             <td>2016/05/31</td>
             <td>2030/12/31</td> 
         </tr>
-    </table>
-
+    </table> -
+        
+    
+        
 </body>
 
 </html>

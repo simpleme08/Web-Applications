@@ -13,12 +13,15 @@
     }
     #Fetching Data by object
     while($row =sqlsrv_fetch_array($stmt,SQLSRV_FETCH_ASSOC)) {
+
       echo "<tr><td>$row[EmpName]</td><td>$row[empcode]</td></tr>";
+
     }
   }
   catch(error $e) {
     echo "Error: " . $e->getMessage();
   }
     echo "</table>";
+   
 
 ?>

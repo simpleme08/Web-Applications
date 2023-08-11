@@ -1,17 +1,12 @@
-const table = document.getElementById('emp');
 
-const rows = table.getElementsByTagName('tr');
-
-Array.from(rows).forEach((row, index) => {
-  row.addEventListener('click', () => {
-    const cells = row.getElementsByTagName('td');
-    console.log(cells[0]);
-    console.log(cells[1]);
-
-    const content1 = cells[0].innerHTML;
-    console.log(content1);
-
-    const content2 = cells[1].innerHTML;
-    console.log(content2);
-  });
-});
+var table = document.getElementById('emp');
+                
+for(var i = 1; i < table.rows.length; i++)
+{
+    table.rows[i].onclick = function()
+    {
+         //rIndex = this.rowIndex;
+         document.getElementById("empcode").value = this.cells[1].innerHTML;
+        
+    };
+}
