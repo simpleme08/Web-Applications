@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
 
 </head>
 <body>
@@ -36,12 +36,12 @@
     </div>
   </form>
 </div>
-<script>
+<!-- <script>
     let inputElem = document.querySelector("input");
     window.addEventListener('load', function(e) {
     inputElem.focus();
 })
-</script>
+</script> -->
 
 <!-- <script>
 // Get the modal
